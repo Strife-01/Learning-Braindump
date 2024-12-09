@@ -9,10 +9,7 @@ bool upordown(int *outer)
   {
     return upordown(&x);
   }
-  else
-  {
-    return &x > outer;
-  }
+  return &x > outer;
 }
 
 int main(int argc, char *argv[])
