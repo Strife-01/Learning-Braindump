@@ -10,3 +10,15 @@ function mkdcd() {
   mkdir "$*"
   cd "$*"
 }
+
+# explanations for courses
+function mkdcdexp_c() {
+  if [[ $# == 0 ]]; then
+    echo 'Usage: mkdcd dir_name'
+    exit 1
+  fi
+  mkdir "$*"
+  cd "$*"
+  cp /Users/strife/Boot_Dev/12.\ Learn\ Memory\ Management/munit/* .
+  vim explanation.txt
+}
